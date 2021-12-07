@@ -1,4 +1,4 @@
-**Secret Universe Investigation Organization Bot 2.0**
+# Secret Universe Investigation Organization Bot 2.0
 
 ---
 
@@ -9,7 +9,7 @@ Và đây chính là toàn bộ source code của SUIBOT 2.0 cho những ngườ
 Code có thể khó đọc vì đây là code của một người chưa có kinh nghiệm về lập trình.
 Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server của mình bằng link sau [Link](https://discord.com/api/oauth2/authorize?client_id=872034926130782208&permissions=8&scope=bot)
 
-**Các tính năng của Bot**
+## Các tính năng của Bot
 
 ---
 
@@ -20,7 +20,7 @@ Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server củ
 * Music
 * Profile Card
 
-**Install and Setup**
+## Install and Setup
 
 ---
 
@@ -56,7 +56,7 @@ for filename in os.listdir('./ProfileCard'):
         client.load_extension(f'ProfileCard.{filename[:-3]}')
 ```
 
-**Setup mute và unmute**
+## Setup mute và unmute
 
 Vào file ./Moderator/mute.py và bỏ id của role muted vào biến *tunhan* và id của kênh thông báo mute vào biến *mutechannel*
 
@@ -65,7 +65,7 @@ tunhan = 762694968930074644
 mutechannel = 784235323781152769
 ```
 
-**Setup verify**
+## Setup verify
 
 Vào file ./Moderator/verify.py và bỏ role xác thực vào biến *checkrole* và id của kênh chat thông báo vào biến *chung*
 
