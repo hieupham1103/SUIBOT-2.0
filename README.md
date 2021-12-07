@@ -2,12 +2,12 @@
 
 ---
 
-Secret Universe Investigation Organization Bot 2.0 hay viết tắt là SUIBOT 2.0 là 1 con bot Discord được tạo bởi hieupham1103#0188 dựa trên thư viện [https://github.com/Rapptz/discord.py](Discord.py)
+Secret Universe Investigation Organization Bot 2.0 hay viết tắt là SUIBOT 2.0 là 1 con bot Discord được tạo bởi hieupham1103#0188 dựa trên thư viện [Discord.py](https://github.com/Rapptz/discord.py)
 
 Và đây chính là toàn bộ source code của SUIBOT 2.0 cho những người nào có nhu cầu tham khảo và tạo một con bot cho riêng mình.
 
 Code có thể khó đọc vì đây là code của một người chưa có kinh nghiệm về lập trình.
-Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server của mình bằng link sau [https://discord.com/api/oauth2/authorize?client_id=872034926130782208&amp;permissions=8&amp;scope=bot](Link)
+Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server của mình bằng link sau [Link](https://discord.com/api/oauth2/authorize?client_id=872034926130782208&amp;permissions=8&amp;scope=bot)
 
 **Các tính năng của Bot**
 
