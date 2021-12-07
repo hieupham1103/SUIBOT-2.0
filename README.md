@@ -11,7 +11,6 @@ Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server củ
 
 ## Các tính năng của Bot
 
----
 
 * Mute/ Unmute
 * Ping
@@ -21,8 +20,6 @@ Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server củ
 * Profile Card
 
 ## Install and Setup
-
----
 
 Hãy clone code của bot về
 
