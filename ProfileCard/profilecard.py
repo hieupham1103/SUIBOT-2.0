@@ -14,8 +14,8 @@ class Profile(commands.Cog):
       print('Profile is working.')
 
     @commands.command()
-    async def setbg(self, ctx, index):
-        if int(index) > 5:
+    async def setbg(self, ctx, index = "0"):
+        if int(index) > 5 or int(index) <1:
           await ctx.send("Hiện tại chỉ có BG từ 1 đến 5")
           return
         with open("./Database/background.json","r") as f:

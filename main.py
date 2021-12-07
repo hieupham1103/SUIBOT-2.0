@@ -19,29 +19,21 @@ client.remove_command('help')
 async def on_ready():
     print('Running')
 
-# for filename in os.listdir('./Moderator'):
-#     if filename.endswith('.py'):
-#         client.load_extension(f'Moderator.{filename[:-3]}')
-
-# for filename in os.listdir('./AIchat'):
-#     if filename.endswith('.py'):
-#         client.load_extension(f'AIchat.{filename[:-3]}')
-
-# for filename in os.listdir('./Hentai'):
-#     if filename.endswith('.py'):
-#         client.load_extension(f'Hentai.{filename[:-3]}')
-
-# for filename in os.listdir('./Music'):
-#     if filename.endswith('.py'):
-#         client.load_extension(f'Music.{filename[:-3]}')
-
-# for filename in os.listdir('./JRPG'):
-#     if filename.endswith('.py'):
-#         client.load_extension(f'JRPG.{filename[:-3]}')
-
-for filename in os.listdir('./DevZone'):
+for filename in os.listdir('./Moderator'):
     if filename.endswith('.py'):
-        client.load_extension(f'DevZone.{filename[:-3]}')
+        client.load_extension(f'Moderator.{filename[:-3]}')
+
+for filename in os.listdir('./Music'):
+    if filename.endswith('.py'):
+        client.load_extension(f'Music.{filename[:-3]}')
+
+for filename in os.listdir('./ProfileCard'):
+    if filename.endswith('.py'):
+        client.load_extension(f'ProfileCard.{filename[:-3]}')
+
+# for filename in os.listdir('./DevZone'):
+#     if filename.endswith('.py'):
+#         client.load_extension(f'DevZone.{filename[:-3]}')
 
 
 
