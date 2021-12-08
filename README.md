@@ -36,7 +36,7 @@ Tạo một file **config.json** và bỏ token, client id, client secret vào f
 }
 ```
 
-* [ ] Cài đặt các thư viện cần thiết trong trong file **./requirements.txt**
+Cài đặt các thư viện cần thiết trong trong file **./requirements.txt**
 
 Trong file **./main.py** có 3 nhóm lệnh hãy bỏ đi nếu không muốn dùng tính năng trong nhóm đó
 
