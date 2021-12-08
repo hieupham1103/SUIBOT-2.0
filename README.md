@@ -11,7 +11,6 @@ Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server củ
 
 ## Các tính năng của Bot
 
-
 * Mute/ Unmute
 * Ping
 * Văn mẫu
@@ -27,7 +26,7 @@ Hãy clone code của bot về
 git clone https://github.com/hieupham1103/SUIBOT-2.0.git
 ```
 
-Tạo một file config.json và bỏ token, client id, client secret vào file config đó.
+Tạo một file **config.json** và bỏ token, client id, client secret vào file config đó.
 
 ```
 {
@@ -37,7 +36,9 @@ Tạo một file config.json và bỏ token, client id, client secret vào file 
 }
 ```
 
-Trong file main.py có 3 nhóm lệnh hãy bỏ đi nếu không muốn dùng tính năng trong nhóm đó
+* [ ] Cài đặt các thư viện cần thiết trong trong file **./requirements.txt**
+
+Trong file **./main.py** có 3 nhóm lệnh hãy bỏ đi nếu không muốn dùng tính năng trong nhóm đó
 
 ```
 for filename in os.listdir('./Moderator'):
@@ -55,7 +56,7 @@ for filename in os.listdir('./ProfileCard'):
 
 ## Setup mute và unmute
 
-Vào file ./Moderator/mute.py và bỏ id của role muted vào biến *tunhan* và id của kênh thông báo mute vào biến *mutechannel*
+Vào file **./Moderator/mute.py** và bỏ id của role muted vào biến *tunhan* và id của kênh thông báo mute vào biến *mutechannel*
 
 ```
 tunhan = 762694968930074644
@@ -64,9 +65,19 @@ mutechannel = 784235323781152769
 
 ## Setup verify
 
-Vào file ./Moderator/verify.py và bỏ role xác thực vào biến *checkrole* và id của kênh chat thông báo vào biến *chung*
+Vào file **./Moderator/verify.py** và bỏ role xác thực vào biến *checkrole* và id của kênh chat thông báo vào biến *chung*
 
 ```
 checkrole = 856054757855461406
 chung = 764510929500373023
+```
+
+## Run Bot
+
+Mở Terminal và chạy file **./main.py**
+
+```
+python main.py
+#Hoặc cái dưới
+python3 main.py
 ```
