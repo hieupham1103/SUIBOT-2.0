@@ -49,6 +49,8 @@ class Kick(commands.Cog):
         embed.add_field(name='s+resume', value='Tiếp tục nhạc', inline=False)
         embed.add_field(name='s+volume <số>', value='Chỉnh âm lượng', inline=False)
         embed.add_field(name='s+startYT', value='Coi Youtube cùng nhau qua discord?', inline=False)
+         embed.add_field(name='s+startPO', value='Cờ vua cùng nhau qua discord?', inline=False)
+          embed.add_field(name='s+startCH', value='Poker cùng nhau qua discord?', inline=False)
         await ctx.send(embed=embed)
     
 
