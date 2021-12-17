@@ -110,7 +110,7 @@ class Music(commands.Cog):
     async def remove(self, ctx, index: int = None):
         index -= 1
         await self.MusicManager.queue_remove(ctx,index)
-        await ctx.send(f"Đã remove trong queue queue!!")
+        await ctx.send(f"Đã remove trong queue!!")
 
     
 

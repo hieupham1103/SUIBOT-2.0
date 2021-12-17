@@ -31,6 +31,10 @@ for filename in os.listdir('./ProfileCard'):
     if filename.endswith('.py'):
         client.load_extension(f'ProfileCard.{filename[:-3]}')
 
+for filename in os.listdir('./YTtogether'):
+    if filename.endswith('.py'):
+        client.load_extension(f'YTtogether.{filename[:-3]}')
+
 # for filename in os.listdir('./DevZone'):
 #     if filename.endswith('.py'):
 #         client.load_extension(f'DevZone.{filename[:-3]}')
