@@ -17,7 +17,7 @@ Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server củ
 * Verify
 * Music (discordSuperUtils)
 * Profile Card
-* Youtube Together (DiscordTogether)
+* Discord Together
 
 ## Install and Setup
 
