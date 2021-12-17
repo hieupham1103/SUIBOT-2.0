@@ -15,8 +15,9 @@ Mọi người có thể ủng hộ tôi bằng cách thêm bot vào server củ
 * Ping
 * Văn mẫu
 * Verify
-* Music
+* Music (discordSuperUtils)
 * Profile Card
+* Youtube Together (DiscordTogether)
 
 ## Install and Setup
 
