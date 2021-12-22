@@ -31,15 +31,20 @@ class YT(commands.Cog):
         link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'chess')
         await ctx.send(f"ẤN VÀO ĐỂ CỜ DUA GO BỦBỦ!!\n{link}")
 
-    # @commands.command()
-    # async def startYT(self,ctx):
-    #     link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'youtube')
-    #     await ctx.send(f"ẤN VÀO ĐỂ GO BỦBỦ!!\n{link}")
+    @commands.command()
+    async def startAM(self,ctx):
+        link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'betrayal')
+        await ctx.send(f"ẤN VÀO ĐỂ CHƠI AMOG SÚ GO BỦBỦ!!\n{link}")
     
-    # @commands.command()
-    # async def startYT(self,ctx):
-    #     link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'youtube')
-    #     await ctx.send(f"ẤN VÀO ĐỂ GO BỦBỦ!!\n{link}")
+    @commands.command()
+    async def startFI(self,ctx):
+        link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'fishing')
+        await ctx.send(f"ẤN VÀO ĐỂ GIẢ LẬP NGƯ DÂN NHA TRANG GO BỦBỦ!!\n{link}")
+    
+    @commands.command()
+    async def startSC(self,ctx):
+        link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'spellcast')
+        await ctx.send(f"ẤN VÀO ĐỂ NỐI TỪ GO BỦBỦ!!\n{link}")
     
 
 def setup(client):

@@ -17,10 +17,6 @@ class Kick(commands.Cog):
                               description='',
                               colour=discord.Colour.blue())
         embed.set_thumbnail(url=self.client.user.avatar_url)
-        embed.add_field(name='s+ping', value='Gọi cho tôi', inline=False)
-        embed.add_field(name='s+listping', value='Danh sách các câu trả lời cá nhân của lênh ping', inline=False)
-        embed.add_field(name='s+addping <Câu trả lời>', value='Thêm câu trả lời cá nhân của lênh ping', inline=False)
-        embed.add_field(name='s+delping <số thứ tự>', value='Xóa câu trả lời cá nhân của lênh ping', inline=False)
         embed.add_field(name='s+info <ping người khác nếu muốn>', value='Xem profile card', inline=False)
         embed.add_field(name='s+setbg', value='Chỉnh bg cho profile card của mình', inline=False)
         embed.add_field(
@@ -30,6 +26,22 @@ class Kick(commands.Cog):
         embed.add_field(name='s+unmute <đối tượng>',
                         value='Ân xá cho tù nhân',
                         inline=False)
+        embed.add_field(name='s+gamehelp', value='hướng dấn của game', inline=False)                
+        embed.add_field(name='s+musichelp', value='hướng dấn của nhạc', inline=False)      
+        embed.add_field(name='s+pinghelp', value='hướng dấn của ping và vanmau', inline=False)      
+        await ctx.send(embed=embed)
+
+
+    @commands.command()
+    async def pinghelp(self, ctx):
+        embed = discord.Embed(title='HƯỚNG DẪN CỦA S.U.I',
+                              description='',
+                              colour=discord.Colour.blue())
+        embed.set_thumbnail(url=self.client.user.avatar_url)
+        embed.add_field(name='s+ping', value='Gọi cho tôi', inline=False)
+        embed.add_field(name='s+listping', value='Danh sách các câu trả lời cá nhân của lênh ping', inline=False)
+        embed.add_field(name='s+addping <Câu trả lời>', value='Thêm câu trả lời cá nhân của lênh ping', inline=False)
+        embed.add_field(name='s+delping <số thứ tự>', value='Xóa câu trả lời cá nhân của lênh ping', inline=False)
         embed.add_field(
             name='s+vanmau <đối tượng>',
             value=
@@ -38,6 +50,16 @@ class Kick(commands.Cog):
         embed.add_field(name='s+listvanmau', value='Danh sách văn mẫu', inline=False)
         embed.add_field(name='s+addvanmau <văn mẫu>', value='Thêm văn mẫu', inline=False)
         embed.add_field(name='s+delvanmau <số thứ tự>', value='Xóa văn mẫu', inline=False)
+        
+
+        await ctx.send(embed=embed)
+
+    @commands.command()
+    async def musichelp(self, ctx):
+        embed = discord.Embed(title='HƯỚNG DẪN CỦA S.U.I',
+                              description='',
+                              colour=discord.Colour.blue())
+        embed.set_thumbnail(url=self.client.user.avatar_url)
         embed.add_field(name='s+join', value='Mời bot vào voice', inline=False)
         embed.add_field(name='s+play <tên bài hoặc link bài hát>', value='Bật nhac', inline=False)
         embed.add_field(name='s+queue', value='Coi queue nhạc', inline=False)
@@ -48,11 +70,23 @@ class Kick(commands.Cog):
         embed.add_field(name='s+pause', value='Tạm dừng nhạc', inline=False)
         embed.add_field(name='s+resume', value='Tiếp tục nhạc', inline=False)
         embed.add_field(name='s+volume <số>', value='Chỉnh âm lượng', inline=False)
-        embed.add_field(name='s+startYT', value='Coi Youtube cùng nhau qua discord?', inline=False)
-        embed.add_field(name='s+startPO', value='Cờ vua cùng nhau qua discord?', inline=False)
-        embed.add_field(name='s+startCH', value='Poker cùng nhau qua discord?', inline=False)
+        
         await ctx.send(embed=embed)
-    
+
+    @commands.command()
+    async def gamehelp(self, ctx):    
+        embed = discord.Embed(title='HƯỚNG DẪN CỦA S.U.I',
+                              description='',
+                              colour=discord.Colour.blue())
+        embed.set_thumbnail(url=self.client.user.avatar_url)
+        embed.add_field(name='s+startYT', value='Coi Youtube cùng nhau qua discord?', inline=False)
+        embed.add_field(name='s+startPO', value='Poker cùng nhau qua discord?', inline=False)
+        embed.add_field(name='s+startCH', value='Cờ vua cùng nhau qua discord?', inline=False)
+        embed.add_field(name='s+startFI', value='Giả lập câu cá kiểu ngư dân Nha Trang cùng nhau qua discord?', inline=False)
+        embed.add_field(name='s+startAM', value='Among sú bản pha ke cùng nhau qua discord?', inline=False)
+        embed.add_field(name='s+startSC', value='Nối từ cực căng cùng nhau qua discord?', inline=False)
+        
+        await ctx.send(embed=embed)
 
 def setup(client):
     client.add_cog(Kick(client))
